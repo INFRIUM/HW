@@ -1,0 +1,64 @@
+# ============================================
+# INFRIUM | HW Git Ignore
+# ESP32 / Arduino / PlatformIO
+# ============================================
+
+# 1. Build outputs
+.pio/
+.pioenvs/
+.piolibdeps/
+build/
+_build/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.a
+
+# 2. Arduino temporary files
+arduino_build_*/
+arduino_cache_*/
+*.ino.cpp
+
+# 3. IDE / Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# 4. Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 5. Logs / Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# 6. Local environment / Secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets.h
+credentials.h
+wifi_credentials.h
+config.local.h
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# 7. Python cache (HW utility scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
